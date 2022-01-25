@@ -11,31 +11,32 @@ class Calculator:
 		return x + y
 	
 	def subtract(self,x,y):
-		""" subtract's number y from number x  """
+		'''subtract's number y from number x'''
 		return x - y
 	
-	def calc_remainder(self, x, n):
+	def remainder(self, x, n):
+		'''calculate the remainder using mod'''
 		return x % n
 
-	def multiplaction(self, x, y):
+	def multiplication(self, x, y):
 		''' multiplies two numbers x,y together'''
 		return x * y
 
 	def sine(self,x):
-		'''Finds the sine of the value passed in'''
+		''' Finds the sine of the value passed in '''
 		return math.sin(x)
 
 	def cosine(self,x):
-		'''Finds the cosine of the value passed in'''
+		''' Finds the cosine of the value passed in '''
 		return math.cos(x)
 
 	def tangent(self,x):
-		'''Finds the tangent of the value passed in'''
+		''' Finds the tangent of the value passed in '''
 		return math.tan(x)
 
 	def division(self,x,y):
-		""" divide's two numbers x,y together """
-		return (x / y) if y != 0 else 0
+		''' divide's two numbers x,y together '''
+		return (x / y) if y != 0 else None
 
 
 if __name__ == '__main__':
