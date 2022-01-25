@@ -9,6 +9,14 @@ class Calculator:
 	def add(self,x,y):
 		""" add's two numbers x,y together """
 		return x + y
+	
+	def subtract(self,x,y):
+		""" subtract's number y from number x  """
+		return x - y
+
+	def multiplaction(self, x, y):
+		''' multiplies two numbers x,y together'''
+		return x * y
 
 
 	def sine(self,x):
@@ -31,3 +39,4 @@ if __name__ == '__main__':
 	print(calc.sine(2))
 	print(calc.cosine(2))
 	print(calc.tangent(2))
+	print(calc.subtract(100000,20000))
