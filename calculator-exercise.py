@@ -40,6 +40,10 @@ class Calculator:
 
 	def mean(self,x):
 		return statistics.mean(x)
+=======
+	def round_up(self,x):
+		""" round up a numbers """
+		return round(x)
 
 
 if __name__ == '__main__':
