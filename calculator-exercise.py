@@ -47,5 +47,5 @@ if __name__ == '__main__':
 	print(calc.division(2,3))
 	print(calc.sine(2))
 	print(calc.cosine(2))
-	print(calc.tangents(2))
+	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
