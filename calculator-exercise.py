@@ -38,6 +38,10 @@ class Calculator:
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
+	def round_up(self,x):
+		""" round up a numbers """
+		return round(x)
+
 
 if __name__ == '__main__':
 	calc = Calculator()
