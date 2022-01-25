@@ -41,7 +41,7 @@ class Calculator:
 		"""finds the center most value"""
 		x.sort()
 		n = int(len(x)/2)
-		return round((x[n]+x[n+1])/2, 2) if len(x)%2 == 0 else round(x[int((len(x)-1)/2)], 2)
+		return round((x[n]+x[n-1])/2, 2) if len(x)%2 == 0 else round(x[int((len(x)-1)/2)], 2)
 
 
 if __name__ == '__main__':
