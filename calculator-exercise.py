@@ -1,5 +1,6 @@
 import math
-# import statistics
+
+import statistics
 class Calculator:
 
 	""" 
@@ -52,14 +53,8 @@ class Calculator:
 	# def mean(self,x):
 	# 	return statistics.mean(x)
 
-	def round_up(self,x):
-		""" round up a numbers """
-		return round(x)
-
-	def sqrt(self,x):
-		''' Finds the squareroot of the value passed in '''
-		return math.sqrt(x)
-
+	def mode(self, list):
+		return statistics.mode(list)
 
 if __name__ == '__main__':
 	calc = Calculator()
