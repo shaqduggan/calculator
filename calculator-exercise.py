@@ -38,6 +38,9 @@ class Calculator:
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
+	def mean(self,x):
+		return math.mean(x)
+
 
 if __name__ == '__main__':
 	calc = Calculator()
