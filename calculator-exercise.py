@@ -36,6 +36,14 @@ class Calculator:
 		return math.tan(x)
 
 	def division(self,x,y):
+		""" divide's two numbers x,y together """
+		return (x / y) if y != 0 else 0
+	
+	def find_median(self, x):
+		"""finds the center most value"""
+		x.sort()
+		n = int(len(x)/2)
+		return round((x[n]+x[n-1])/2, 2) if len(x)%2 == 0 else round(x[int((len(x)-1)/2)], 2)
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
@@ -67,6 +75,7 @@ if __name__ == '__main__':
 	print(calc.cosine(2))
 	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
+	print(calc.find_median([1,1,9,7,5,1,3,2,6,4,8,9,4,2,3,1,5]))
 	print(calc.isPrime(13))
 
 	randomList = [36, 42, 27, 32, 39]
