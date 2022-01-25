@@ -1,5 +1,5 @@
 import math
-
+import statistics
 class Calculator:
 
 	""" 
@@ -39,16 +39,18 @@ class Calculator:
 		return (x / y) if y != 0 else None
 
 	def mean(self,x):
-		return math.mean(x)
+		return statistics.mean(x)
 
 
 if __name__ == '__main__':
 	calc = Calculator()
 	print(calc.add(2,3))
 	print(calc.subtract(100000,20000))
-	print(calc.calc_remainder(7,3))
+	# print(calc.calc_remainder(7,3))
 	print(calc.division(2,3))
 	print(calc.sine(2))
 	print(calc.cosine(2))
 	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
+	randomList = [36, 42, 27, 32, 39]
+	print(calc.mean(randomList))
