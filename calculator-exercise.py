@@ -1,5 +1,5 @@
 import math
-
+# import statistics
 class Calculator:
 
 	""" 
@@ -38,16 +38,27 @@ class Calculator:
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
-    def isPrime(self,x):
-        ''' This is a Prime Number Finder Function '''
-        prime = False
-        if x > 1:  
-            prime = True
-            for i in range(2,int(math.sqrt(x))+1):  
-                if x % i == 0:  
-                    prime = False
-                    break
-        return prime
+  def isPrime(self,x):
+      ''' This is a Prime Number Finder Function '''
+      prime = False
+      if x > 1:  
+          prime = True
+          for i in range(2,int(math.sqrt(x))+1):  
+              if x % i == 0:  
+                  prime = False
+                  break
+      return prime
+    
+	# def mean(self,x):
+	# 	return statistics.mean(x)
+
+	def round_up(self,x):
+		""" round up a numbers """
+		return round(x)
+
+	def sqrt(self,x):
+		''' Finds the squareroot of the value passed in '''
+		return math.sqrt(x)
 
 
 if __name__ == '__main__':
@@ -55,9 +66,14 @@ if __name__ == '__main__':
 	print(calc.add(2,3))
 	print(calc.subtract(100000,20000))
 	print(calc.remainder(7,3))
+	# print(calc.calc_remainder(7,3))
 	print(calc.division(2,3))
 	print(calc.sine(2))
 	print(calc.cosine(2))
 	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
 	print(calc.isPrime(13))
+
+	randomList = [36, 42, 27, 32, 39]
+	# print(calc.mean(randomList))
+	print(calc.sqrt(7))
