@@ -1,5 +1,5 @@
 import math
-import statistics
+# import statistics
 class Calculator:
 
 	""" 
@@ -38,12 +38,16 @@ class Calculator:
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
-	def mean(self,x):
-		return statistics.mean(x)
-=======
+	# def mean(self,x):
+	# 	return statistics.mean(x)
+
 	def round_up(self,x):
 		""" round up a numbers """
 		return round(x)
+
+	def sqrt(self,x):
+		''' Finds the squareroot of the value passed in '''
+		return math.sqrt(x)
 
 
 if __name__ == '__main__':
@@ -57,4 +61,5 @@ if __name__ == '__main__':
 	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
 	randomList = [36, 42, 27, 32, 39]
-	print(calc.mean(randomList))
+	# print(calc.mean(randomList))
+	print(calc.sqrt(7))
