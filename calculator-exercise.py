@@ -13,7 +13,7 @@ class Calculator:
 		""" subtract's number y from number x  """
 		return x - y
 	
-	def calc_remainder(x, n):
+	def calc_remainder(self, x, n):
 		return x % n
 
 
