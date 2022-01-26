@@ -63,6 +63,10 @@ class Calculator:
 
     def sqrt(self, x):
         return math.sqrt(x)
+    
+    def round_up(self,x, dec):
+        """ round up a numbers """
+        return round(x, dec)
 
 if __name__ == '__main__':
     calc = Calculator()
