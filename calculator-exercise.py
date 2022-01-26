@@ -31,13 +31,8 @@ class Calculator:
 		''' Finds the cosine of the value passed in '''
 		return math.cos(x)
 
-<<<<<<< HEAD
 	def tangents(self,x):
 		''' Finds the tangent of the value passed in '''
-=======
-	def tangent(self,x):
-		'''Finds the tangent of the value passed in'''
->>>>>>> parent of 03edbdc (Update calculator-exercise.py)
 		return math.tan(x)
 
 	def divisions(self,x,y):
@@ -79,7 +74,6 @@ if __name__ == '__main__':
 	print(calc.sine(2))
 	print(calc.cosine(2))
 	print(calc.tangent(2))
-<<<<<<< HEAD
 	print(calc.subtract(100000,20000))
 	print(calc.find_median([1,1,9,7,5,1,3,2,6,4,8,9,4,2,3,1,5]))
 	print(calc.isPrime(13))
@@ -87,6 +81,6 @@ if __name__ == '__main__':
 	randomList = [36, 42, 27, 32, 39]
 	# print(calc.mean(randomList))
 	print(calc.sqrt(7))
-=======
+
 	print(calc.subtract(100000,20000))
->>>>>>> parent of 03edbdc (Update calculator-exercise.py)
+
