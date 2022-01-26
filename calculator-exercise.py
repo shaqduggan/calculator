@@ -5,7 +5,7 @@ class Calculator:
 	""" 
 	Calculator module for in class assignment 
 	"""
-	'''Debby test to reverse'''
+
 	def add(self,x,y):
 		""" add's two numbers x,y together """
 		return x + y
