@@ -34,6 +34,9 @@ class Calculator:
 		""" divide's two numbers x,y together """
 		return (x / y) if y != 0 else 0
 
+	def sqrt(self,x):
+		''' Finds the squareroot of the value passed in '''
+		return math.sqrt(x)
 
 if __name__ == '__main__':
 	calc = Calculator()
@@ -43,3 +46,6 @@ if __name__ == '__main__':
 	print(calc.cosine(2))
 	print(calc.tangent(2))
 	print(calc.subtract(100000,20000))
+	print(calc.sqrt(7))
+
+	"Brennan's revert"
