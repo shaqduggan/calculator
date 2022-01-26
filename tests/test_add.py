@@ -12,6 +12,9 @@ class CalculatorTests(unittest.TestCase):
     
     def test_add_float(self):
         self.assertEqual(self.calc.add(3.2, 1.2), 4.4)
+    
+    def test_add_str(self):
+        self.assertFalse(self.calc.add("2","3"), 5)
 
 if __name__ == '__main__':
     unittest.main()
