@@ -9,9 +9,9 @@ class Calculator:
 		""" add's two numbers x,y together """
 		return x + y
 
-	def multiplaction(self, x, y):
+	def multiplaction(self, x, y, z):
 		''' multiplies two numbers x,y together'''
-		return x * y
+		return x * y * z
 
 
 if __name__ == '__main__':
