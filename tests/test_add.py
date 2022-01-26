@@ -22,5 +22,11 @@ class CalculatorTests(unittest.TestCase):
 		"""
 		self.assertEqual(self.calc.add(2.0,3.2), 5.2)
 
+	def test_multiply_integers(self):
+		"""
+		Test the multiplication of integers
+		"""
+		self.assertEqual(self.calc.multiplication(2, 3), 6)
+
 if __name__ == '__main__':
     unittest.main()
