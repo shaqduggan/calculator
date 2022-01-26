@@ -1,3 +1,4 @@
+from cmath import nan
 import math
 import statistics
 class Calculator:
@@ -12,7 +13,7 @@ class Calculator:
     
     def subtract(self,x,y):
         '''subtract's number y from number x'''
-        return x - y
+        return x - y if isinstance(x, int) and isinstance(y, int) else nan
     
     def remainder(self, x, n):
         '''calculate the remainder using mod'''
