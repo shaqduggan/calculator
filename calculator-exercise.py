@@ -60,6 +60,11 @@ class Calculator:
 
 	def mode(self, list):
 		return statistics.mode(list)
+	
+	def sd(x):
+		size = len(x)
+		mean = sum(x)/size
+		return round(math.sqrt(sum([(mean - i)**2 for i in x])/(size-1)), 4)
 
 if __name__ == '__main__':
 	calc = Calculator()
