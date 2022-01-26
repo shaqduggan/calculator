@@ -39,7 +39,7 @@ class Calculator:
 		""" divide's two numbers x,y together """
 		return (x / y) if y != 0 else 0
 	
-	def find_median(self, x):
+	def median(self, x):
 		"""finds the center most value"""
 		x.sort()
 		n = int(len(x)/2)
