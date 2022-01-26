@@ -6,9 +6,9 @@ class Calculator:
     Calculator module for in class assignment 
     """
 
-    def add(self,x,y):
+    def add(self,x,y,z):
         """ add's two numbers x,y together """
-        return x + y
+        return x + y + z
     
     def subtract(self,x,y):
         '''subtract's number y from number x'''
