@@ -1,9 +1,0 @@
-to make changes to a repo 
-1. make sure you are update using git fetch, the git pull 
-2. create a new branch using git checkout -b <branch name> 
-3. make changes 
-4. add changes, commit changes, write commit message descriping changes  (using git add, git commit -m "message goes here")
-5. push new branch to remote repo (git push -u (if it's a new branch) origin <branch name>) otherwise just git push
-6. Open a Pull Request (PR) and fix conflicts if necessary 
-7. Wait for someone else to review your code (approving your PR, make changes suggested by the person) (if you make changes, go back to 4)
-8. when PR is approved, merge into master. 
