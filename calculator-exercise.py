@@ -31,15 +31,15 @@ class Calculator:
 		''' Finds the cosine of the value passed in '''
 		return math.cos(x)
 
-	def tangents(self,x):
+	def tangent(self,x):
 		''' Finds the tangent of the value passed in '''
 		return math.tan(x)
 
-	def divisions(self,x,y):
+	def division(self,x,y):
 		""" divide's two numbers x,y together """
 		return (x / y) if y != 0 else 0
 	
-	def find_medians(self, x):
+	def find_median(self, x):
 		"""finds the center most value"""
 		x.sort()
 		n = int(len(x)/2)
