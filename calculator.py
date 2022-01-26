@@ -62,7 +62,7 @@ class Calculator:
         return statistics.mode(list)
 
     def sqrt(self, x):
-    	return math.sqrt(x)
+        return math.sqrt(x)
 
 if __name__ == '__main__':
     calc = Calculator()
