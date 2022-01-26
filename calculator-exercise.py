@@ -47,19 +47,16 @@ class Calculator:
 		''' divide's two numbers x,y together '''
 		return (x / y) if y != 0 else None
 
-  def isPrime(self,x):
-      ''' This is a Prime Number Finder Function '''
-      prime = False
-      if x > 1:  
-          prime = True
-          for i in range(2,int(math.sqrt(x))+1):  
-              if x % i == 0:  
-                  prime = False
-                  break
-      return prime
-    
-	# def mean(self,x):
-	# 	return statistics.mean(x)
+	def isPrime(self,x):
+		''' This is a Prime Number Finder Function '''
+		prime = False
+		if x > 1:  
+			prime = True
+			for i in range(2,int(math.sqrt(x))+1):  
+				if x % i == 0:  
+					prime = False
+					break
+		return prime
 
 	def mode(self, list):
 		return statistics.mode(list)
