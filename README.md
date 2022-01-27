@@ -17,4 +17,14 @@ Assigned Parts of Calculator:
 - division : debbie 
 - multiplication: dakota 
 - square root / pi : brennan. 
-- trig functions (sin, cosine, tan): justin 
+- trig functions (sin, cosine, tan): justin  
+
+More Functionality: 
+- rounding function (def round_answer()) : debbie
+- calculate the mean (is the average i.e. 1 + 2 + 3 / 2 = 3) : justin 
+- calculate the mode (the most common thing that appears in a list i.e. [1,1,2,3] -> 1) / Dakota
+- calculate the median (the middle number in a list of numbers 
+  -even case [2,1,3] -> sort list [1,2,3] -> 2)
+  -odd  case [2,1,3,4] -> [1,2,3,4] -> 2 + 3 / 2 = 2.5  : taro  
+
+- check if a number is prime : shaq 
