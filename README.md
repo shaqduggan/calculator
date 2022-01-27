@@ -11,6 +11,8 @@ calculator exercise for understanding how git works
 5. When you think your changes are ready to be merged, create a PR and find someone to review your code before merging. 
 
 
+this is some global change
+
 Assigned Parts of Calculator: 
 - subtraction : shaq
 - remainder: taro 
