@@ -10,18 +10,6 @@ class CalculatorTests(unittest.TestCase):
 		"""
 		cls.calc = Calculator()
 
-	def test_add_integers(self):
-		""" 
-		Test the addition of integers
-		"""
-		self.assertEqual(self.calc.add(2,3), 5)
-
-	def test_add_floats(self):
-		""" 
-		Test the addition of floats
-		"""
-		self.assertEqual(self.calc.add(2.0,3.2), 5.2)
-	
 	def test_sine(self):
 		""" 
 		Test for sine
