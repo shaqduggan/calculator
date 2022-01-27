@@ -1,3 +1,0 @@
-git pull origin main  : something changed on master/main since you made your branch and you wanna update your branch with the latest changes from master/main 
-
-git commit --amend  : if you wanna change your commit message
