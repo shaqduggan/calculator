@@ -1,13 +1,7 @@
 .DS_Store
-<<<<<<< HEAD
-<<<<<<< HEAD
 __pycache__/*
 *.pyc
-=======
 __pycache__
 __init__.py
->>>>>>> b00cdf1f361be4951afcea0bb156f05d1674d809
-=======
 __pycache__
 __init__.py
->>>>>>> b00cdf1f361be4951afcea0bb156f05d1674d809
