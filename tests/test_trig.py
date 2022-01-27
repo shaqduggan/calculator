@@ -14,19 +14,19 @@ class CalculatorTests(unittest.TestCase):
 		""" 
 		Test for sine
 		"""
-		self.assertEqual(self.calc.sin(2), 0.9092974268256817)
+		self.assertEqual(round(self.calc.sine(2),2), 0.91)
 	
 	def test_cosine(self):
 		""" 
 		Test for cosine
 		"""
-		self.assertEqual(self.calc.sin(2), -0.4161468365471424)
+		self.assertEqual(round(self.calc.cosine(2),2), -0.42)
 	
 	def test_tangent(self):
 		""" 
 		Test tangent
 		"""
-		self.assertEqual(self.calc.sin(2), -2.185039863261519)
+		self.assertEqual(round(self.calc.tangent(2),2), -2.19)
 	
 
 if __name__ == '__main__':
