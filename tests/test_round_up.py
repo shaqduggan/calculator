@@ -14,7 +14,7 @@ class CalculatorTests(unittest.TestCase):
 		""" 
 		Test the round up of floats
 		"""
-		self.assertEqual(self.calc.round_up(5.5,1), 6)
+		self.assertEqual(self.calc.round_up(5.5,0), 6.0)
 
 if __name__ == '__main__':
     unittest.main()
