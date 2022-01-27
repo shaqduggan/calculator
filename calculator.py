@@ -67,20 +67,3 @@ class Calculator:
     def round_up(self,x, dec):
         """ round up a numbers """
         return round(x, dec)
-
-if __name__ == '__main__':
-    calc = Calculator()
-    print(calc.add(2,3))
-    print(calc.subtract(100000,20000))
-    print(calc.remainder(7,3))
-    print(calc.division(2,3))
-    print(calc.sine(2))
-    print(calc.cosine(2))
-    print(calc.tangent(2))
-    print(calc.subtract(100000,20000))
-    print(calc.median([1,1,9,7,5,1,3,2,6,4,8,9,4,2,3,1,5]))
-    print(calc.isPrime(13))
-
-    randomList = [36, 42, 27, 32, 39]
-    print(calc.mean(randomList))
-    print(calc.sqrt(7))

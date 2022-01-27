@@ -1,7 +1,7 @@
 import unittest
 from calculator import Calculator
 
-class CalculatorTests(unittest.TestCase):
+class CalculatorAddTests(unittest.TestCase):
 
 	@classmethod
 	def setUpClass(cls):
