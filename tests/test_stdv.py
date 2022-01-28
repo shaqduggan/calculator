@@ -12,7 +12,7 @@ class CalculatorStdvTests(unittest.TestCase):
 
     def test_stdv(self):
         """ tests if the functuon returns stdv value as expected """
-        self.assertEqual(self.calc.stdv(self.data), 3.1112)
+        self.assertEqual(self.calc.stdv(self.testData), 3.1112)
 
     def test_stdv_against_stat_lib(self):
         """ comapare returned value from calc.stdv to the equivalence of stats lib (both rounded at 4th decimal)"""
