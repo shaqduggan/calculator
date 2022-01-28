@@ -67,3 +67,9 @@ class Calculator:
     def round_up(self,x, dec):
         """ round up a numbers """
         return round(x, dec)
+    
+    def stdv(self, x):
+        """ calculates the standard deviation of a set of numeric data """
+        size = len(x)
+        mean = sum(x)/size
+        return round(math.sqrt(sum([(mean - datum)**2 for datum in x])/(size-1)), 4)
