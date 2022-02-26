@@ -4,21 +4,16 @@ from calculator import Calculator
 
 class CalculatorIsPrimeTests(unittest.TestCase):
 
-	@classmethod
-	def setUpClass(cls):
-		"""
-		instantiate our class  (fixture)
-		"""
-		cls.calc = Calculator()
-
 	def test_is_prime(self):
-		""" 
-		Test the addition of integers
 		"""
-		self.assertTrue(self.calc.isPrime(2))
-		self.assertTrue(self.calc.isPrime(5))
+		Test if a number is prime 
+		"""
+		self.assertTrue(Calculator([2]).is_prime())
+		self.assertTrue(Calculator([5]).is_prime())
 
 	def test_is_not_prime(self):
-
-		self.assertFalse(self.calc.isPrime(4))
-		self.assertFalse(self.calc.isPrime(8))
+		"""
+		Test if a number is not prime
+		"""
+		self.assertFalse(Calculator([4]).is_prime())
+		self.assertFalse(Calculator([8]).is_prime())
