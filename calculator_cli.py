@@ -7,14 +7,26 @@ def calculator_cli():
     """Set up for Calculator Cli"""
     parser = argparse.ArgumentParser(description="Calculator")
     parser.add_argument("-a","--add",action='store',type=int, nargs=2, help="adds two numbers")
-    parser.add_argument("-s","--subtract",action='store',type=int, nargs=2, help="subtracts two numbers")
-    parser.add_argument("-m","--multiplication",action='store',type=int, nargs=2, help="multiplies two numbers")
-    parser.add_argument("-d","--division",action='store',type=int, nargs=2, help="divides two numbers")
+
+    parser.add_argument("-s","--subtract",action='store',type=int,
+    nargs=2, help="subtracts two numbers")
+
+    parser.add_argument("-m","--multiplication",action='store',type=int,
+    nargs=2, help="multiplies two numbers")
+
+    parser.add_argument("-d","--division",action='store',type=int,
+    nargs=2, help="divides two numbers")
+
     parser.add_argument("-r","--remainder",action='store',type=int, nargs=2, help="finds remainder")
+
     parser.add_argument("-si","--sine",action='store',type=int, nargs=1, help="finds sine")
     parser.add_argument("-co","--cosine",action='store',type=int, nargs=1, help="finds cosine")
-    parser.add_argument("-t","--tangent",action='store',type=int, nargs=1, help="finds tangent")
-    parser.add_argument("-p","--is_prime",action='store',type=int, nargs=1, help="This is a Prime Number Finder Function")
+    parser.add_argument("-t","--tangent",action='store',type=int,
+    nargs=1, help="finds tangent")
+
+    parser.add_argument("-p","--is_prime",action='store',type=int,
+    nargs=1, help="This is a Prime Number Finder Function")
+
     parser.add_argument("-me","--median",action='store',type=int, nargs='+', help="finds median")
     parser.add_argument("-mn","--mean",action='store',type=int, nargs='+', help="finds mean")
     parser.add_argument("-mo","--mode",action='store',type=int, nargs='+', help="finds mode")
