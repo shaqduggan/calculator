@@ -42,7 +42,6 @@ def index():
         return render_template("index.html")
 
 
-
 # OUR API
 def is_valid_expression(expression):
     op_list = ['+','-','*','x','/','//','%']
