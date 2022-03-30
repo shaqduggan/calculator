@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {display: block;
+              margin: 0;
+              background-color: red;
+            }
+        h1 {color: gold;}
+        
+        div{border: 3px solid black;}
+        li {
+           list-style: none;
+            }
+
+    </style>
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+    <div class="card" >
+        <form action="#" method="Post">
+            <h1>Calculator</h1>
+            <ul> 
+                <li>
+                    <label for="num1">First Number:</label>
+                    <input type="number" name="num1" id="num1">
+                </li>
+                <li>
+                    <label for="op">Math Sign/Operator:</label>
+                    <input type="text" name="op" id="op">
+                </li>
+                <li>
+                    <label for="num2">Second Number:</label>
+                    <input type="number" name="num2" id="num2"><br>
+                </li>
+                <li>
+                    <button type="submit">Submit!</button>
+                    <h1>Result: <span id="result">{{res}}</span></h1>
+                </li>
+            </ul> 
+        </form>
+    </div>
+    </center>
+</body>
+</html>
