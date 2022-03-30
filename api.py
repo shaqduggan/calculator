@@ -44,19 +44,25 @@ def index():
 
 
 # OUR API
+def is_valid_expression(expression):
+    op_list = ['+','-','*','x','/','//','%']
+    for op in op_list:
+        if op in expression:
+            return True
+    return False 
+
 
 @server.route("/evaluate/<string:expr>", methods=["GET"])
 def evaluate(expr: str):
+    
+    if is_valid_expression(expr):
 
-	# if is_valid_expression():
-	# 	pass
+        try:
+            res = eval(expr)
+        except Exception as e:
+            raise e
 
-	try:
-		res = eval(expr)
-	except Exception as e:
-		raise e
-
-	return jsonify({"result": res})
+        return jsonify({"result": res})
 
 
 
