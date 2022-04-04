@@ -1,7 +1,6 @@
 """api.py"""
-from flask import Flask, jsonify, request, render_template  
-from calculator import Calculator
-import os
+from flask import Flask, jsonify, request, render_template
+
 
 # OUR WEBSITE
 
@@ -9,14 +8,14 @@ server = Flask(__name__)
 @server.route("/", methods=['Get','Post'])
 def index():
     """
-    main page 
+    main page
     """
 
     if request.method == 'POST':
         num1 = int(request.form['num1'])
         num2 = int(request.form['num2'])
         math_sign_operator = request.form['op']
-              
+
         if math_sign_operator == "+":
             res = (num1 + num2)
 
@@ -25,13 +24,13 @@ def index():
 
         elif math_sign_operator == "*" or math_sign_operator == "x":
             res = (num1 * num2)
-        
+
         elif math_sign_operator == "/" and num2 > 0:
             res = (num1 / num2)
 
         elif math_sign_operator == "%" and num2 > 0:
             res = (num1 % num2)
-            
+
         else:
             res = "Invalid operator"
 
@@ -44,26 +43,27 @@ def index():
 
 # OUR API
 def is_valid_expression(expression):
+    """Checks if Valid Operator is present in string"""
     op_list = ['+','-','*','x','/','//','%']
-    for op in op_list:
-        if op in expression:
+    for operator in op_list:
+        if operator in expression:
             return True
-    return False 
+    return False
 
 
 @server.route("/evaluate/<string:expr>", methods=["GET"])
 def evaluate(expr: str):
-    
+
     if is_valid_expression(expr):
 
         try:
             res = eval(expr)
-        except Exception as e:
-            raise e
+        except Exception as an_error:
+            raise an_error
 
         return jsonify({"result": res})
 
 
 
 if __name__ == '__main__':
-	server.run("0.0.0.0", debug=True)
+    server.run("0.0.0.0", debug=True)
