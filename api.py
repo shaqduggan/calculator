@@ -37,8 +37,7 @@ def index():
         # print(type(res))
         return render_template("index.html",res = res)
 
-    else:
-        return render_template("index.html")
+    return render_template("index.html")
 
 
 # OUR API
@@ -53,6 +52,7 @@ def is_valid_expression(expression):
 
 @server.route("/evaluate/<string:expr>", methods=["GET"])
 def evaluate(expr: str):
+    ''' This is a Server Route which will return a valid expression once user enters string '''
 
     if is_valid_expression(expr):
 
