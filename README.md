@@ -1,7 +1,5 @@
-# calculator-exercise-2022
-calculator exercise for understanding how git works 
-
-
+# Simple Calculator Web Based application
+calculator exercise for understanding how git works
 
 1. clone this repo using ```git clone```
 2. add a new branch (git branch or git checkout -b) with your assigned feature. i.e. substraction-feature 
