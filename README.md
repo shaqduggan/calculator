@@ -1,4 +1,4 @@
-# Simple Calculator Web Based application
+# Simple calculator web-based application
 calculator exercise for understanding how git works
 
 1. clone this repo using ```git clone```
